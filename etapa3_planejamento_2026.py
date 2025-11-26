@@ -4,7 +4,7 @@ import numpy as np
 from pathlib import Path
 
 # ================== CONFIG ==================
-BASE_DIR  = Path(r"C:\Users\monta\OneDrive\Documentos\Meta\METAxSACADA\ML-Sacada")
+BASE_DIR  = Path(__file__).resolve().parent
 SAIDAS    = BASE_DIR / "saidas"
 IN_PREV   = SAIDAS / "previsao_2026.xlsx"              # gerado na Etapa 2 (com FAIXA_PRECO)
 OUT_XLSX  = SAIDAS / "planejamento_comercial_2026.xlsx"

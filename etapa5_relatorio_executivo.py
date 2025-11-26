@@ -6,7 +6,7 @@ from pathlib import Path
 import tempfile, shutil, traceback
 
 # ================== CONFIG ==================
-BASE_DIR = Path(r"C:\Users\monta\OneDrive\Documentos\Meta\METAxSACADA\ML-Sacada")
+BASE_DIR = Path(__file__).resolve().parent
 IN_DIR   = BASE_DIR / "saidas"
 IN_XLSX  = IN_DIR / "validacao_decisao_2026.xlsx"
 OUT_XLSX = IN_DIR / "relatorio_executivo_2026.xlsx"
